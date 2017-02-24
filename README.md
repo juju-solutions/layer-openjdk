@@ -44,3 +44,4 @@ charm that provides the `java` relation endpoint. Example deployment:
 
 - <kevin.monroe@canonical.com>
 
+Foo bar (adding for a test)
