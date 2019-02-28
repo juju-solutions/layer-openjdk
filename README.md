@@ -4,8 +4,7 @@ This is a layered charm that generates a deployable OpenJDK charm. Source for
 this charm is available at
 [github](https://github.com/juju-solutions/layer-openjdk).
 
-
-# Usage
+## Usage
 
 This subordinate charm implements the `java` interface and requires a principal
 charm that provides the `java` relation endpoint. Example deployment:
@@ -14,8 +13,7 @@ charm that provides the `java` relation endpoint. Example deployment:
     juju deploy openjdk
     juju add-relation ubuntu-devenv openjdk
 
-
-# Configuration
+## Configuration
 
 ### java-type
 
@@ -28,19 +26,19 @@ charm that provides the `java` relation endpoint. Example deployment:
 
       juju set openjdk java-type=full
 
-
 ### java-major
 
-  Major version of Java to install.  This defaults to `8` and installs
-  openjdk-8-[jre|jdk]. Valid options for Ubuntu 14.04 (Trusty) are `6`, `7`,
-  or `8`. Valid options for Ubuntu 16.04 (Xenial) are `8` or `9`.
+Major version of Java to install.  This defaults to `8` and installs
+openjdk-8-[jre|jdk]. Valid options for Ubuntu releases are:
 
-  Switch between Java7 and Java6 with the following:
+- 14.04 (Trusty): `6`, `7`, `8`
+- 16.04 (Xenial): `8`, `9`
+- 18.04 (Bionic): `8`, `11`
 
-      juju set openjdk java-major=6
+Switch between Java8 and Java9 with the following:
 
+    juju set openjdk java-major=9
 
-# Contact Information
+## Contact Information
 
 - <kevin.monroe@canonical.com>
-
