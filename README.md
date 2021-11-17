@@ -34,6 +34,7 @@ openjdk-8-[jre|jdk]. Valid options for Ubuntu releases are:
 - 14.04 (Trusty): `6`, `7`, `8`
 - 16.04 (Xenial): `8`, `9`
 - 18.04 (Bionic): `8`, `11`
+- 20.04 (Focal):  `8`, `11`, `13`, `16`, `17`
 
 Switch between Java8 and Java9 with the following:
 
